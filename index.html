@@ -1,109 +1,88 @@
  <!DOCTYPE html>
  <html lang="ru-ru">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="Лучший маркетплейс от Ху Тао"/>
-    <meta name="keywords" content="Ху Тао, маркетплейс, итмо, зачем это читать"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Лучший маркетплейс от Ху Тао">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HuTaoStore</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header>
-    <h1>HuTaoStore</h1>
-    <nav>
-        <ul>
-            <li><a href="#catalog">Каталог</a></li>
-            <li><a href="#cart">Корзина</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+
+<header class="header">
+    <h1 class="header__title">HuTaoStore</h1>
+    <nav class="header__nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+            <li class="nav__item"><a href="#cart" class="nav__link">Корзина</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
         </ul>
     </nav>
 
-    <blockquote>
+    <blockquote class="header__quote">
         <p>У нее лучшие вещи - не только гробы</p>
-        <cite>Чжун Ли<sub>Куда тут эти ваши сабы</sub><sup>и сапы</sup></cite>
+        <cite>Чжун Ли</cite>
     </blockquote>
 </header>
 
-<main>
-    <section id="promo">
+<main class="main-content">
+    <section id="promo" class="promo">
         <h2>🔥 Акции и новинки</h2>
-        <article>
-            <img src="images/placeholder.jpg" alt="Акция 1" width="300">
+        <article class="promo__item">
+            <img src="images/placeholder.jpg" alt="Акция 1" class="promo__image">
             <p><strong>Скидка 1000Р</strong> на фигурки Ху Тао!</p>
         </article>
-        <article>
-            <img src="images/placeholder.jpg" alt="Акция 2" width="300">
+        <article class="promo__item">
+            <img src="images/placeholder.jpg" alt="Акция 2" class="promo__image">
             <p>Новые подвески с <em>Ху Тао</em>!</p>
         </article>
     </section>
 
-    <section id="catalog">
+    <section id="catalog" class="catalog">
         <h2>Каталог товаров</h2>
-        <article>
+        <article class="catalog__item">
             <h3>Фигурка Ху Тао</h3>
-            <img src="images/placeholder.jpg" alt="Фигурка Ху Тао" width="200">
-            <p>Цена: <del>4000Р</del>3000Р</p>
-            <button>Купить</button>
+            <img src="images/placeholder.jpg" alt="Фигурка Ху Тао" class="catalog__image">
+            <p>Цена: <del>4000Р</del> 3000Р</p>
+            <button class="catalog__button">Купить</button>
         </article>
-        <article>
+        <article class="catalog__item">
             <h3>Кепка с логотипом Ваншэн</h3>
-            <img src="images/placeholder.jpg" alt="Кепка Ваншэн" width="200">
+            <img src="images/placeholder.jpg" alt="Кепка Ваншэн" class="catalog__image">
             <p>Цена: 1200Р</p>
-            <button>Купить</button>
+            <button class="catalog__button">Купить</button>
         </article>
-        <article>
+        <article class="catalog__item">
             <h3>Брелок с Ху Тао</h3>
-            <img src="images/placeholder.jpg" alt="Брелок с Ху Тао" width="200">
+            <img src="images/placeholder.jpg" alt="Брелок с Ху Тао" class="catalog__image">
             <p>Цена: 500Р</p>
-            <button>Купить</button>
+            <button class="catalog__button">Купить</button>
         </article>
     </section>
-
-    <pre>
-        <code>
-using System;
-
-if (day.IsBeautiful) {
-    Console.WriteLine("Hello from Hu Tao");
-}
-        </code>
-    </pre>
 </main>
 
-<aside id="cart">
+<aside class="cart" id="cart">
     <h2>Корзина</h2>
-    <div class="cart-item">
+    <div class="cart__item">
         <p>Фигурка Ху Тао</p>
         <p>Цена: 3000 ₽</p>
-        <button>Удалить</button>
+        <button class="cart__button">Удалить</button>
     </div>
-    <div class="cart-item">
+    <div class="cart__item">
         <p>Кепка с логотипом Ваншэн</p>
         <p>Цена: 1200 ₽</p>
-        <button>Удалить</button>
+        <button class="cart__button">Удалить</button>
     </div>
     <p><strong>Итого: 4200 ₽</strong></p>
 </aside>
 
-<footer>
+<footer class="footer">
     <p>2024 HuTaoStore. Никакие права не защищены.</p>
     <p>Тг: <a id="contacts" href="https://t.me/kris1love">Telegram</a></p>
-    <pre>
-       ,___          .-;'
-       `"-.`\_...._/`.`
-    ,      \        /
- .-' ',    / ()   ()\
-`'._   \  /()    .  (|
-    > .' ;,     -'-  /
-   / <   |;,     __.;
-   '-.'-.|  , \    , \
-      `>.|;, \_)    \_)
-       `-;     ,    /
-          \    /   <
-           '. <`'-,_)
-            '._)
-    </pre>
+
 </footer>
 </body>
  </html>
