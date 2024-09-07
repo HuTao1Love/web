@@ -15,42 +15,45 @@
 </head>
 <body>
 
-<header class="header">
-    <h1 class="header__title"><a href="index.html" class="header__link">HuTaoStore</a></h1>
-    <nav class="header__nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="index.html" class="nav__link">Каталог</a></li>
-            <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="reviews.html" class="nav__link active">Отзывы</a></li>
-            <li class="nav__item"><a href="offers.html" class="nav__link">Предложения</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="content-container">
+    <header class="header">
+        <h1 class="header__title"><a href="index.html" class="header__link">HuTaoStore</a></h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="reviews.html" class="nav__link active">Отзывы</a></li>
+                <li class="nav__item"><a href="offers.html" class="nav__link">Предложения</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="main-container">
-    <section id="offer-section" class="offer-section">
-        <h2>Предложите свои товары!</h2>
-        <form id="offer-form">
-            <label for="username">Имя:</label><br>
-            <input type="text" id="username" name="username" required class="offer__input"><br><br>
+    <main class="main-container">
+        <section id="offer-section" class="offer-section">
+            <h2>Предложите свои товары!</h2>
+            <form id="offer-form">
+                <label for="username">Имя:</label><br>
+                <input type="text" id="username" name="username" required class="offer__input"><br><br>
 
-            <label for="contact">Как с вами связаться:</label><br>
-            <input type="text" id="contact" name="contact" required class="offer__input"><br><br>
+                <label for="contact">Как с вами связаться:</label><br>
+                <input type="text" id="contact" name="contact" required class="offer__input"><br><br>
 
-            <label for="offer">Ваше предложение:</label><br>
-            <textarea id="offer" name="offer" rows="4" required class="offer__input"></textarea><br><br>
+                <label for="offer">Ваше предложение:</label><br>
+                <textarea id="offer" name="offer" rows="4" required class="offer__input"></textarea><br><br>
 
-            <button type="submit" class="offer__submit">Отправить</button>
-        </form>
+                <button type="submit" class="offer__submit">Отправить</button>
+            </form>
 
-        <h2>Что уже предложили:</h2>
-        <div id="offer-container"></div>
-    </section>
-</main>
+            <h2>Что уже предложили:</h2>
+            <div id="offer-container"></div>
+        </section>
+    </main>
 
-<footer class="footer">
-  <p>2024 HuTaoStore. Никакие права не защищены.</p>
-  <p>Тг: <a id="contacts" href="https://t.me/kris1love">Telegram</a></p>
-</footer>
+    <footer class="footer">
+        <p>2024 HuTaoStore. Никакие права не защищены.</p>
+        <p>Тг: <a id="contacts" href="https://t.me/kris1love">Telegram</a></p>
+    </footer>
+</div>
+
 </body>
 </html>
