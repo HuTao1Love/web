@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="scripts/main.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper-config.js"></script>
 </head>
 
 <body>
@@ -50,19 +53,54 @@
                 <div class="catalog__items">
                     <article class="catalog__item">
                         <h3>Фигурка Ху Тао</h3>
-                        <img src="images/placeholder.jpg" alt="Фигурка Ху Тао" class="catalog__image">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-fig-1.png" alt="Фигурка Ху Тао 1" class="catalog__image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-fig-2.png" alt="Фигурка Ху Тао 2" class="catalog__image">
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
                         <p>Цена: <del>4000Р</del> 3000Р</p>
                         <button class="catalog__button">Купить</button>
                     </article>
+
                     <article class="catalog__item">
-                        <h3>Кепка с логотипом Ваншэн</h3>
-                        <img src="images/placeholder.jpg" alt="Кепка Ваншэн" class="catalog__image">
+                        <h3>Кепка "Ваншэн"</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-cap-1.jpg" alt="Кепка Ваншэн" class="catalog__image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-cap-2.jpg" alt="Кепка Ваншэн" class="catalog__image">
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
                         <p>Цена: 1200Р</p>
                         <button class="catalog__button">Купить</button>
                     </article>
+
                     <article class="catalog__item">
                         <h3>Брелок с Ху Тао</h3>
-                        <img src="images/placeholder.jpg" alt="Брелок с Ху Тао" class="catalog__image">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-keychain-1.jpg" alt="Брелок Ху Тао 1" class="catalog__image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/hutao-keychain-2.jpg" alt="Брелок Ху Тао 2" class="catalog__image">
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
                         <p>Цена: 500Р</p>
                         <button class="catalog__button">Купить</button>
                     </article>
