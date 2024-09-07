@@ -49,13 +49,18 @@ body {
 }
 
 .nav__link {
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
     font-weight: 700;
 }
 
 .nav__link:hover {
     text-decoration: underline;
+}
+
+.nav__link--active {
+    font-weight: bold;
+    color: #fff;
 }
 
     .main-container {
@@ -255,6 +260,29 @@ body {
     .nav__item {
         margin: 5px 0;
     }
+}
+
+.about, .reviews {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.review p {
+    margin: 0;
+    color: #555;
 }
 
 @media (max-width: 480px) {
