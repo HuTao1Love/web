@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <script src="scripts/reviews.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -31,18 +32,9 @@
 <main class="main-container">
     <section class="reviews">
         <h2>Отзывы</h2>
-        <article class="review">
-            <h3>Чжун Ли</h3>
-            <p>Отличный магазин! Товары высокого качества и быстрая доставка. Рекомендую всем!</p>
-        </article>
-        <article class="review">
-            <h3>Аяка</h3>
-            <p>Очень довольна покупкой. Все как на картинке, а также приятные бонусы к заказу.</p>
-        </article>
-        <article class="review">
-            <h3>Адепте Щяо</h3>
-            <p>Был удивлен отличным обслуживанием и вниманием к деталям. Вернусь сюда снова!</p>
-        </article>
+        <div id="preloader" class="preloader">Загрузка...</div>
+        <div id="reviews-container"></div>
+        <div id="error-message" class="error-message" style="display:none;">⚠ Что-то пошло не так!</div>
     </section>
 </main>
 
